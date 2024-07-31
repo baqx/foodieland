@@ -4,6 +4,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster");
 @import url("https://fonts.googleapis.com/css2?family=Inter");
 
+*:focus {
+  outline: none;
+}
 body {
   margin: 0;
   font-family: Inter;

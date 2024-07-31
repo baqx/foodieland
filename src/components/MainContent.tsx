@@ -20,7 +20,7 @@ const MainContent: React.FC = () => {
           <button>View Recipe</button>
         </div>
       </section>
-      {/* Add more sections as needed */}
+
     </main>
   );
 };

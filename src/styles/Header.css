@@ -27,10 +27,11 @@
   transition: color 0.3s;
   font-family: Inter;
   font-weight: 800;
+  transition: 0.3s;
 }
 
 .header-nav a:hover {
-  color: #1d4ed8; /* blue-700 */
+  color: #1d4ed8;
 }
 
 .header-icons {

@@ -1,0 +1,31 @@
+.recipes-container {
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+}
+
+.recipes-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 58.09px;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
+.recipes-subtitle {
+  font-size: 1rem;
+  color: #00000099;
+  margin-bottom: 30px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+}
+
+.recipes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

@@ -1,0 +1,90 @@
+.chef-showcase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #ffffff;
+  position: relative;
+  border-radius: 16px;
+}
+
+.showcase-content {
+  flex: 1;
+  padding: 20px;
+}
+.chef-showcase-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 58.09px;
+  letter-spacing: -0.04em;
+  text-align: left;
+}
+.chef-showcase-subtitle {
+  font-size: 1rem;
+  color: #00000099;
+  margin-bottom: 30px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}
+
+.learn-more {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  letter-spacing: -0.02em;
+  color: #fff;
+  text-decoration: none;
+  background-color: #000;
+  padding: 16px 25px;
+  border-radius: 10px;
+}
+.learn-more:hover {
+  opacity: 0.8;
+}
+.showcase-image {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background: linear-gradient(to right, #ffffff, #e7fafe);
+}
+.chef-image {
+  max-height: 496px;
+}
+.showcase-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ingredient {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+}
+
+.ingredient1 {
+  top: 10px;
+  left: 10px;
+}
+
+.ingredient2 {
+  top: 30px;
+  right: 10px;
+}
+
+.ingredient3 {
+  bottom: 10px;
+  left: 20px;
+}
+
+.ingredient4 {
+  bottom: 40px;
+  right: 40px;
+}

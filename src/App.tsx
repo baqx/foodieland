@@ -4,6 +4,11 @@ import MainContent from "./components/MainContent";
 import Footer from "./components/Footer";
 import HeroSection from "./components/MainContents/HeroSection";
 import Categories from "./components/MainContents/Categories";
+import Recipes from "./components/MainContents/Recipes";
+import ChefShowcase from "./components/MainContents/ChefShowcase";
+import InstagramSection from "./components/MainContents/InstagramSection";
+import MoreRecipes from "./components/MainContents/MoreRecipes";
+import NewsletterSignup from "./components/MainContents/NewsletterSignup";
 
 const App: React.FC = () => {
   return (
@@ -12,6 +17,12 @@ const App: React.FC = () => {
       <main>
         <HeroSection />
         <Categories />
+        <Recipes />
+        <ChefShowcase />
+        <InstagramSection />
+        <MoreRecipes />
+        <NewsletterSignup />
+        <Footer />
       </main>
     </div>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import "../../styles/MainContents/HeroSection.css";
 import { FaBookmark, FaPlayCircle } from "react-icons/fa";
-
+import heroAvatar from "../../assets/images/avatar.png";
 const HeroSection: React.FC = () => {
   return (
     <section className="app-featured">
@@ -21,10 +21,7 @@ const HeroSection: React.FC = () => {
           </div>
           <div className="hero-cta">
             <div className="hero-cta-wrap-1">
-              <img
-                className="hero-cta-avatar"
-                src="../../assets/images/avatar.png"
-              />
+              <img className="hero-cta-avatar" src={heroAvatar} />
               <div className="flex-col">
                 <h3 className="hero-cta-name">John Smith</h3>
                 <p className="hero-cta-date">15 March, 2022</p>

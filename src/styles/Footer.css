@@ -1,35 +1,96 @@
 .footer {
-    display: flex;
-    justify-content: space-between;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.footer .footer-left {
+  max-width: 300px;
+}
+
+.footer .footer-title {
+  font-size: 1.5rem;
+  font-weight: "bold";
+  font-family: Lobster;
+}
+
+.footer .footer-description {
+  font-size: 14px;
+  color: #666;
+}
+
+.footer .footer-nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.footer .footer-nav a {
+  text-decoration: none;
+  color: #333;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  letter-spacing: -0.02em;
+ transition: 0.3s;
+}
+.footer .footer-nav a:hover{
+  color: #1d4ed8; 
+}
+.footer .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 20px auto 0;
+}
+
+.footer .footer-copyright {
+  font-size: 14px;
+  color: #666;
+}
+
+.footer .footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer .footer-social a {
+  color: #333;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .footer .footer-content {
+    flex-direction: column;
     align-items: center;
-    padding: 1.25rem;
-    background-color: white;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
   }
-  
-  .footer-title {
-    font-size: 1.5rem;
-    font-weight: bold;
+
+  .footer .footer-left {
+    margin-bottom: 20px;
   }
-  
-  .footer-nav {
-    display: flex;
-    gap: 1.25rem;
+
+  .footer .footer-nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
-  
-  .footer-nav a {
-    color: inherit;
-    text-decoration: none;
-    transition: color 0.3s;
+
+  .footer .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
   }
-  
-  .footer-nav a:hover {
-    color: #1d4ed8; /* blue-700 */
-  }
-  
-  .footer-icons {
-    display: flex;
-    gap: 0.75rem;
-    font-size: 1.25rem;
-  }
-  
+}

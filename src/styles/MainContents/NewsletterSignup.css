@@ -1,0 +1,112 @@
+.newsletter-container {
+  background-color: #e7f9fd;
+
+  border-radius: 20px;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.newsletter-content {
+  max-width: 500px;
+  position: relative;
+  z-index: 2;
+}
+
+.newsletter-content h2 {
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+    font-family: Inter;
+    font-weight: 800;
+}
+
+.newsletter-content p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.newsletter-container form {
+  display: flex;
+  gap: 10px;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+.newsletter-content input[type="email"] {
+  flex-grow: 1;
+  padding: 5px;
+  border-radius: 25px;
+  font-size: 1rem;
+}
+
+.newsletter-container button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-container button:hover {
+  background-color: #333;
+}
+
+.newsletter-images {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  overflow: hidden;
+}
+
+.newsletter-images .ingredients {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 40%;
+  height: auto;
+}
+
+.newsletter-images .salad-bowl {
+  position: absolute;
+  bottom: -30%;
+  right: -10%;
+  width: 70%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .newsletter-container {
+    padding: 30px;
+  }
+
+  .newsletter-content {
+    max-width: 100%;
+  }
+
+  .newsletter-content h2 {
+    font-size: 2rem;
+  }
+
+  .newsletter-images {
+    display: none;
+  }
+
+  .newsletter-content form {
+    flex-direction: column;
+  }
+
+  .newsletter-content input[type="email"],
+  button {
+    width: 100%;
+  }
+}
