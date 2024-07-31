@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster");
+@import url("https://fonts.googleapis.com/css2?family=Inter");
+.app-featured {
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-card {
+  height: 640px;
+  width: 1280px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  flex: 1;
+}
+.hero-card .left-section {
+  background-color: #e7fafe;
+
+  flex: 0.5;
+  border-radius: 20px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 10px 7px;
+}
+.hero-card .hero-text-wrapper {
+  margin: 30px;
+  margin-top: 70px;
+}
+.hero-card .hero-text {
+  font-family: Inter;
+  line-height: 80px;
+  font-size: 64px;
+  font-weight: 600;
+  text-align: left;
+}
+.hero-card .hero-text-desc {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: #00000099;
+}
+.hero-card .right-section {
+  flex: 0.5;
+  background-image: url("../../assets/images/baked-chicken-wings-asian-style-tomatoes-sauce-plate\ 1.png");
+  background-position: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.hero-card-chip {
+  background-color: #ffffff;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-grow: 0 !important;
+  max-width: 150px;
+  gap: 3;
+  box-shadow: 10px 20px 40px 0px #2940461a;
+}
+
+.hero-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 150px;
+  width: 150px;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+  top: 30px;
+  left: -50px;
+}
+
+.hero-cta {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0px;
+  width: 45%;
+  justify-content: space-between;
+}
+
+.hero-cta-avatar {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.hero-cta-button {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 17px;
+  border-radius: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: Inter;
+  flex-direction: row !important;
+
+}
+.hero-cta-wrap-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 10px;
+}

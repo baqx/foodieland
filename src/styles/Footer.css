@@ -1,0 +1,35 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+    background-color: white;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .footer-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .footer-nav {
+    display: flex;
+    gap: 1.25rem;
+  }
+  
+  .footer-nav a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-nav a:hover {
+    color: #1d4ed8; /* blue-700 */
+  }
+  
+  .footer-icons {
+    display: flex;
+    gap: 0.75rem;
+    font-size: 1.25rem;
+  }
+  
