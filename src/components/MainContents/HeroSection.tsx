@@ -21,10 +21,13 @@ const HeroSection: React.FC = () => {
           </div>
           <div className="hero-cta">
             <div className="hero-cta-wrap-1">
-              <img className="hero-cta-avatar" />
+              <img
+                className="hero-cta-avatar"
+                src="../../assets/images/avatar.png"
+              />
               <div className="flex-col">
-                <h3>John Smith</h3>
-                <p>15 March, 2022</p>
+                <h3 className="hero-cta-name">John Smith</h3>
+                <p className="hero-cta-date">15 March, 2022</p>
               </div>
             </div>
 
