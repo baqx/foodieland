@@ -7,7 +7,7 @@ interface RecipeCardProps {
   title: string;
   time: string;
   category: string;
-  categoryIcon: string;
+
 }
 
 const RecipeCard: React.FC<RecipeCardProps> = ({
@@ -15,7 +15,7 @@ const RecipeCard: React.FC<RecipeCardProps> = ({
   title,
   time,
   category,
-  categoryIcon,
+
 }) => {
   return (
     <div className="recipe-card">

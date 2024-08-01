@@ -1,7 +1,6 @@
 import React from "react";
 import "../../styles/MainContents/HeroSection.css";
 import { FaBookmark, FaPlayCircle } from "react-icons/fa";
-import heroAvatar from "../../assets/images/avatar.png";
 import { useNavigate } from "react-router-dom";
 const HeroSection: React.FC = () => {
   const navigate = useNavigate();
@@ -23,7 +22,7 @@ const HeroSection: React.FC = () => {
           </div>
           <div className="hero-cta">
             <div className="hero-cta-wrap-1">
-              <img className="hero-cta-avatar" src={heroAvatar} />
+              <img className="hero-cta-avatar" src="/images/avatar.png" />
               <div className="flex-col">
                 <h3 className="hero-cta-name">John Smith</h3>
                 <p className="hero-cta-date">15 March, 2022</p>

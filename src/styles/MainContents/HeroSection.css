@@ -44,7 +44,7 @@
 }
 .hero-card .right-section {
   flex: 0.5;
-  background-image: url("../../assets/images/baked-chicken-wings-asian-style-tomatoes-sauce-plate\ 1.png");
+  background-image: url("../../../public/images/hero.png");
   background-position: cover;
   background-repeat: no-repeat;
   border-radius: 20px;
@@ -63,7 +63,7 @@
   border-radius: 10px;
   display: flex;
   flex-grow: 0 !important;
-background-color: #ffffff;
+  background-color: #ffffff;
   gap: 8;
   box-shadow: 10px 20px 40px 0px #2940461a;
 }
