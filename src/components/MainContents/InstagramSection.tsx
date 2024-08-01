@@ -16,7 +16,11 @@ const InstagramSection: React.FC = () => {
         </p>
         <div className="instagram-grid">
           {postIds.map((id, index) => (
-            <div key={index} className="instagram-item">
+            <div
+              key={index}
+              className="instagram-item"
+              style={{ height: "400px" }}
+            >
               <InstagramEmbed
                 url={`https://www.instagram.com/p/${id}/`}
                 width={328}
