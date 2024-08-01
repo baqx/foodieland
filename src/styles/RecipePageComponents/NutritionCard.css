@@ -1,0 +1,127 @@
+.nutrition-card {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 90%;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-button::after {
+  content: "";
+  border-left: 20px solid #000;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  margin-left: 5px;
+}
+
+.content-container {
+  padding: 20px;
+  background-color: #e7fafe;
+  border-radius: 10px;
+}
+.nutrition-info {
+  background-color: #e7fafe;
+}
+.nutrition-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #000;
+  font-family: Inter;
+  font-weight: 600;
+}
+
+.nutrition-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nutrition-info li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 1rem;
+
+  border-bottom: 1px solid #0000001a;
+}
+.nutrition-info .param {
+  color: #00000099;
+}
+.nutrition-info .value {
+  font-family: Inter;
+  font-weight: 500;
+  text-align: right;
+}
+.lorem-ipsum {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #888;
+  line-height: 1.5;
+}
+.overview {
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  padding: 10px;
+  color: #00000099;
+}
+@media (min-width: 768px) {
+  .nutrition-card {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .image-container {
+    width: 50%;
+    padding-top: 28.125%; /* Maintain 16:9 aspect ratio for half width */
+  }
+
+  .content-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 30px;
+    margin-left: 30px;
+  }
+  .overview {
+    padding: 20px;
+  }
+}

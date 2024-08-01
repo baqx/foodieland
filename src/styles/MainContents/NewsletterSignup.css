@@ -6,7 +6,7 @@
   position: relative;
   overflow: hidden;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .newsletter-content {
@@ -16,10 +16,10 @@
 }
 
 .newsletter-content h2 {
-    font-size: 2.3rem;
-    margin-bottom: 10px;
-    font-family: Inter;
-    font-weight: 800;
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+  font-family: Inter;
+  font-weight: 800;
 }
 
 .newsletter-content p {

@@ -2,7 +2,9 @@ import React from "react";
 import "../../styles/MainContents/HeroSection.css";
 import { FaBookmark, FaPlayCircle } from "react-icons/fa";
 import heroAvatar from "../../assets/images/avatar.png";
+import { useNavigate } from "react-router-dom";
 const HeroSection: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <section className="app-featured">
       <div className="hero-card">
@@ -28,11 +30,14 @@ const HeroSection: React.FC = () => {
               </div>
             </div>
 
-            <div className="hero-cta-button flex-grow-0">
+            <button
+              onClick={() => navigate("/RecipePage")}
+              className="hero-cta-button flex-grow-0"
+            >
               <p className="self-center inline-block">
                 <FaPlayCircle /> View Recipeees
               </p>
-            </div>
+            </button>
           </div>
         </div>
 

@@ -1,0 +1,71 @@
+/* CookingStep.css */
+.CookingStep-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .CookingStep-container h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  .CookingStep-step {
+    margin-bottom: 40px;
+    position: relative;
+    padding-left: 40px;
+  }
+  
+  .CookingStep-step-number {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #000;
+    border-radius: 50%;
+  }
+  
+  .CookingStep-step h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .CookingStep-step p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .CookingStep-step img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .CookingStep-container {
+      padding: 10px;
+    }
+  
+    .CookingStep-step {
+      padding-left: 30px;
+    }
+  
+    .CookingStep-step-number {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .CookingStep-step h3 {
+      font-size: 20px;
+    }
+  
+    .CookingStep-step p {
+      font-size: 14px;
+    }
+  }
