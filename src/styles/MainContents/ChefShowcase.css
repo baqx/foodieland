@@ -88,3 +88,11 @@
   bottom: 40px;
   right: 40px;
 }
+@media (max-width: 768px) {
+  .chef-showcase {
+    display: block !important;
+  }
+  .showcase-image {
+    width: 100%;
+  }
+}

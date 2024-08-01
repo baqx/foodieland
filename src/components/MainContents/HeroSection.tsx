@@ -1,52 +1,64 @@
 import React from "react";
 import "../../styles/MainContents/HeroSection.css";
-import { FaBookmark, FaPlayCircle } from "react-icons/fa";
+import { FaPlayCircle, FaScroll, FaStopwatch } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import { ImSpoonKnife } from "react-icons/im";
+
 const HeroSection: React.FC = () => {
   const navigate = useNavigate();
   return (
-    <section className="app-featured">
-      <div className="hero-card">
-        <div className="left-section">
-          <div className="hero-card-chip">
-            <FaBookmark className="self-center" />
-            <div className="self-center">Hot Recipees</div>
-          </div>
-          <div className="hero-text-wrapper">
-            <div className="hero-text">Spicy delicious chicken wings</div>
-            <div className="hero-text-desc">
-              Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad
-              minim
+    <div className="HeroSection">
+      <div className="HeroSection__content">
+        <div className="HeroSection__tag">
+          <span>
+            <FaScroll />
+          </span>
+          <span>Hot Recipes</span>
+        </div>
+        <h1 className="HeroSection__title">Spicy delicious chicken wings</h1>
+        <p className="HeroSection__description  my-5">
+          Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqut enim ad minim
+        </p>
+        <div className="HeroSection__meta">
+          <div className="HeroSection__chip-Wrapper my-10">
+            <div className="HeroSection__chip">
+              <FaStopwatch /> <span>30 Minutes</span>
             </div>
-          </div>
-          <div className="hero-cta">
-            <div className="hero-cta-wrap-1">
-              <img className="hero-cta-avatar" src="/images/avatar.png" />
-              <div className="flex-col">
-                <h3 className="hero-cta-name">John Smith</h3>
-                <p className="hero-cta-date">15 March, 2022</p>
-              </div>
+            <div className="HeroSection__chip">
+              <ImSpoonKnife />
+              <span>Chicken</span>
             </div>
-
-            <button
-              onClick={() => navigate("/RecipePage")}
-              className="hero-cta-button flex-grow-0"
-            >
-              <p className="self-center inline-block">
-                <FaPlayCircle /> View Recipeees
-              </p>
-            </button>
           </div>
         </div>
-
-        <div className="right-section">
-          <div className="hero-badge">
-            <div>Hand Picked Recipee</div>
+        <div className="HeroSection__author self-center">
+          <div className="HeroSection__name-date-avatar self-center">
+            <img
+              src="images/avatar.png"
+              alt="John Smith"
+              className="HeroSection__author-avatar self-center"
+            />
+            <div className="HeroSection__meta self-center align-middle">
+              <span className="HeroSection__author-name">John Smith</span>
+              <span className="HeroSection__date">15 March 2022</span>
+            </div>
           </div>
+
+          <button
+            onClick={() => navigate("/RecipePage")}
+            className="HeroSection__cta self-center"
+          >
+            View Recipes <FaPlayCircle />
+          </button>
         </div>
       </div>
-    </section>
+      <div className="HeroSection__image">
+        <img src="images/hero.png" alt="Spicy delicious chicken wings" />
+        <div className="HeroSection__badge">
+          <img src="images/Badge.png" alt="Handpicked recipes" />
+        </div>
+      </div>
+    </div>
   );
 };
 
