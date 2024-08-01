@@ -1,0 +1,26 @@
+.hero-section-slider {
+  width: 100%;
+  height: auto;
+}
+
+.hero-section-slider .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section-slider .swiper-button-next,
+.hero-section-slider .swiper-button-prev {
+  color: #000;
+}
+
+.hero-section-slider .swiper-pagination-bullet {
+  background: #000;
+}
+
+@media (max-width: 768px) {
+  .hero-section-slider .swiper-button-next,
+  .hero-section-slider .swiper-button-prev {
+    display: none;
+  }
+}

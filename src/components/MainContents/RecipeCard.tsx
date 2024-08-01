@@ -7,7 +7,6 @@ interface RecipeCardProps {
   title: string;
   time: string;
   category: string;
-
 }
 
 const RecipeCard: React.FC<RecipeCardProps> = ({
@@ -15,22 +14,25 @@ const RecipeCard: React.FC<RecipeCardProps> = ({
   title,
   time,
   category,
-
 }) => {
   return (
     <div className="recipe-card">
       <img src={image} alt={title} className="recipe-image" />
       <div className="recipe-content">
         <h3 className="recipe-title">{title}</h3>
-        <div className="recipe-info">
-          <span className="recipe-time">
-            <FaClock /> {time}
-          </span>
-          <div>
-            <ImSpoonKnife />
-            <span className="recipe-category">{category}</span>
+
+        {/* Conditionally render recipe icons so that it wont show the icons if it is an ad */}
+        {time !== "" && (
+          <div className="recipe-info">
+            <span className="recipe-time">
+              <FaClock /> {time}
+            </span>
+            <div>
+              <ImSpoonKnife />
+              <span className="recipe-category">{category}</span>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );

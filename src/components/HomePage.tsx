@@ -8,13 +8,14 @@ import ChefShowcase from "../components/MainContents/ChefShowcase";
 import InstagramSection from "../components/MainContents/InstagramSection";
 import MoreRecipes from "../components/MainContents/MoreRecipes";
 import NewsletterSignup from "../components/MainContents/NewsletterSignup";
+import HeroSectionSlider from "./MainContents/HeroSectionSlider";
 
 const HomePage: React.FC = () => {
   return (
     <div className="font-sans text-gray-900">
       <Header />
       <main>
-        <HeroSection />
+        <HeroSectionSlider />
         <Categories />
         <Recipes />
         <ChefShowcase />

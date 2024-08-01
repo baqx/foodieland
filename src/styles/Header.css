@@ -24,7 +24,6 @@
   transition: color 0.3s;
   font-family: "Inter", sans-serif;
   font-weight: 800;
-  transition: 0.3s;
 }
 
 .header-nav a:hover {
@@ -38,20 +37,47 @@
   margin-right: 8px;
 }
 
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
   .header {
-    flex-direction: column;
-    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around !important;
+    gap: 10px;
+    align-items: normal;
+  }
+
+  .menu-toggle {
+    display: block;
+    order: 2;
   }
 
   .header-nav {
     flex-direction: column;
-    gap: 0.75rem;
-    margin-top: 1rem;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: white;
+    padding: 2rem;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .header-nav.open {
+    right: 0;
   }
 
   .header-icons {
-    margin-top: 1rem;
+    display: none;
   }
 }
