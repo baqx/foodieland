@@ -9,19 +9,33 @@ import InstagramSection from "../components/MainContents/InstagramSection";
 import MoreRecipes from "../components/MainContents/MoreRecipes";
 import NewsletterSignup from "../components/MainContents/NewsletterSignup";
 import HeroSectionSlider from "./MainContents/HeroSectionSlider";
-
+import { Fade, Zoom } from "react-awesome-reveal";
 const HomePage: React.FC = () => {
   return (
     <div>
       <Header />
       <main>
-        <HeroSectionSlider />
-        <Categories />
-        <Recipes />
-        <ChefShowcase />
-        <InstagramSection />
-        <MoreRecipes />
-        <NewsletterSignup />
+        <Fade>
+          <HeroSectionSlider />
+        </Fade>
+        <Fade>
+          <Categories />
+        </Fade>
+        <Fade>
+          <Recipes />
+        </Fade>
+        <Zoom>
+          <ChefShowcase />
+        </Zoom>
+        <Fade>
+          <InstagramSection />
+        </Fade>
+        <Fade>
+          <MoreRecipes />
+        </Fade>
+        <Fade>
+          <NewsletterSignup />
+        </Fade>
         <Footer />
       </main>
     </div>
