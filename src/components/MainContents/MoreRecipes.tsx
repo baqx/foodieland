@@ -1,7 +1,8 @@
 import React from "react";
 import "../../styles/MainContents/MoreRecipes.css";
-import { FaClock } from "react-icons/fa";
+import {FaStopwatch } from "react-icons/fa";
 import { ImSpoonKnife } from "react-icons/im";
+import { useNavigate } from "react-router-dom";
 
 interface Recipe {
   id: number;
@@ -71,6 +72,7 @@ const recipes: Recipe[] = [
 ];
 
 const MoreRecipes: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <div className="more-recipe-gallery">
       <div className="more-recipe-title-wrapper">
@@ -83,7 +85,11 @@ const MoreRecipes: React.FC = () => {
 
       <div className="more-recipe-grid">
         {recipes.map((recipe) => (
-          <div key={recipe.id} className="more-recipe-card">
+          <div
+            key={recipe.id}
+            onClick={() => navigate("/RecipePage")}
+            className="more-recipe-card"
+          >
             <img
               src={recipe.image}
               alt={recipe.title}
@@ -93,7 +99,7 @@ const MoreRecipes: React.FC = () => {
               <h3>{recipe.title}</h3>
               <div className="more-recipe-meta">
                 <span className="more-recipe-time">
-                  <FaClock style={{ fontSize: "1.2em" }} />
+                  <FaStopwatch style={{ fontSize: "1.2em" }} />
                   <span>{recipe.time}</span>
                 </span>
                 <span className="more-recipe-category">

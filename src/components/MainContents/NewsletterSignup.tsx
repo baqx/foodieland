@@ -6,7 +6,7 @@ const NewsletterSignup: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // The backed dev should handle logic here
+    // The tobams backed dev should the handle logic here
     console.log('Subscribed with email:', email);
     setEmail('');
   };

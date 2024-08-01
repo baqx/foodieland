@@ -1,5 +1,4 @@
 import React from "react";
-
 import "../../styles/MainContents/Categories.css";
 import CategoryCard from "./CategoryCard";
 

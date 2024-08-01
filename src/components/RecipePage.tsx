@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import NewsletterSignup from "./MainContents/NewsletterSignup";
@@ -15,7 +15,9 @@ const RecipePage: React.FC = () => {
     carbohydrate: 22.3,
     cholesterol: 37.4,
   };
-
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className="font-sans text-gray-900">
       <Header />

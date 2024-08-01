@@ -3,7 +3,7 @@ import { InstagramEmbed } from "react-social-media-embed";
 import "../../styles/MainContents/InstagramSection.css";
 import { FaInstagram } from "react-icons/fa";
 const InstagramSection: React.FC = () => {
-  const postIds = ["CUbHfhpswxt", "CUbHfhpswxt", "CUbHfhpswxt", "CUbHfhpswxt"];
+  const postIds = ["Cp0ZX4GAuf_", "Cp0ZX4GAuf_", "Cp0ZX4GAuf_"];
 
   return (
     <div className="instagram-container-wrapper">

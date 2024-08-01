@@ -17,28 +17,24 @@ const ChefShowcase: React.FC = () => {
         </a>
       </div>
       <div className="showcase-image">
+        <img src={"/images/chef.png"} alt="Chef" className="chef-image" />
         <img
-          src={process.env.PUBLIC_URL + "/images/chef.png"}
-          alt="Chef"
-          className="chef-image"
-        />
-        <img
-          src={process.env.PUBLIC_URL + "/images/icons/dessert.png"}
+          src={"/images/icons/dessert.png"}
           alt="Ingredient1"
           className="ingredient ingredient1"
         />
         <img
-          src={process.env.PUBLIC_URL + "/images/icons/lunch.png"}
+          src={"/images/icons/lunch.png"}
           alt="Ingredient2"
           className="ingredient ingredient2"
         />
         <img
-          src={process.env.PUBLIC_URL + "/images/icons/meat.png"}
+          src={"/images/icons/meat.png"}
           alt="Ingredient3"
           className="ingredient ingredient3"
         />
         <img
-          src={process.env.PUBLIC_URL + "/images/icons/vegan.png"}
+          src={"/images/icons/vegan.png"}
           alt="Ingredient4"
           className="ingredient ingredient4"
         />

@@ -1,7 +1,8 @@
 import React from "react";
 import "../../styles/MainContents/RecipeCard.css";
-import { FaClock, FaFolder, FaUtensilSpoon } from "react-icons/fa";
+import {FaStopwatch} from "react-icons/fa";
 import { ImSpoonKnife } from "react-icons/im";
+import { useNavigate } from "react-router-dom";
 interface RecipeCardProps {
   image: string;
   title: string;
@@ -15,8 +16,9 @@ const RecipeCard: React.FC<RecipeCardProps> = ({
   time,
   category,
 }) => {
+  const navigate = useNavigate();
   return (
-    <div className="recipe-card">
+    <div className="recipe-card" onClick={() => navigate("/RecipePage")}>
       <img src={image} alt={title} className="recipe-image" />
       <div className="recipe-content">
         <h3 className="recipe-title">{title}</h3>
@@ -25,7 +27,7 @@ const RecipeCard: React.FC<RecipeCardProps> = ({
         {time !== "" && (
           <div className="recipe-info">
             <span className="recipe-time">
-              <FaClock /> {time}
+              <FaStopwatch /> {time}
             </span>
             <div>
               <ImSpoonKnife />
